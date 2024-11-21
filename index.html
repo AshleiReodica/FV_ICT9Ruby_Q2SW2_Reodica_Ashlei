@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q2SW2</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+		body {
+			background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210903/pngtree-technology-robot-blue-technology-sense-lines-image_793551.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			color: white;
+		}
+		.container-fluid {
+			background: rgba(0, 0, 0, 0.4);
+			border-radius: 10px;
+			padding: 20px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			max-height: 800px; 
+			overflow-y: auto; 
+		}
+
+		textarea.form-control {
+			max-height: 150px; 
+			resize: vertical; 		
+		}
+	</style>
+
+</head>
+<body>
+	<h1 style="text-align: center; color: lightblue; font-family: Benguiat Bk Bt;">Roboties Registration Form</h1>
+	<br>
+
+	<div class="container-fluid">
+		<form>
+			<div class="row">
+				<div class="col-md-6">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" class="form-control" placeholder="Enter your name">
+				</div>
+
+				<div class="col-md-6">
+					<label for="age">Age:</label>
+					<input type="number" id="age" name="age" class="form-control" placeholder="Enter your age">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" class="form-control" placeholder="Enter your email">
+				</div>
+
+				<div class="col-md-6">
+					<label for="phone_number">Phone Number:</label>
+					<input type="tel" id="phone_number" name="phone_number" class="form-control" placeholder="Enter your phone number">
+				</div>
+			</div>
+
+			<div class="mb-3">
+				<label class="form-label">Preferred Roboties Topics</label><br>
+				<div>
+					<input type="checkbox" name="robotics_topics" value="Robotic device" id="robotic_device">
+					<label for="robotic_device">Robotics Device</label>
+				</div>
+				<div>
+					<input type="checkbox" name="robotics_topics" value="Robotic system" id="robotic_system">
+					<label for="robotic_system">Robotics System</label>
+				</div>
+				<div>
+					<input type="checkbox" name="robotics_topics" value="Artificial intelligence" id="artificial_intelligence">
+					<label for="artificial_intelligence">Artificial Intelligence</label>
+				</div>
+				<div>
+					<input type="checkbox" name="robotics_topics" value="Humanoid robotics" id="humanoid_robotics">
+					<label for="humanoid_robotics">Humanoid Robotics</label>
+				</div>
+			</div>
+
+			<div class="mb-3">
+				<label class="form-label">Robotics Level</label><br>
+				<div>
+					<input type="checkbox" name="robotics_level" value="Beginner" id="beginner">
+					<label for="beginner">Beginner</label>
+				</div>
+				<div>
+					<input type="checkbox" name="robotics_level" value="Intermediate" id="intermediate">
+					<label for="intermediate">Intermediate</label>
+				</div>
+				<div>
+					<input type="checkbox" name="robotics_level" value="Pro" id="pro">
+					<label for="pro">Pro</label>
+				</div>
+			</div>
+
+			<div class="mb-3">
+				<label for="project" class="form-label">Preferred Robotics Project</label>
+				<select class="form-select" id="project" name="project">
+					<option selected>Choose a project</option>
+					<option value="robotic_car">Robotics Car</option>
+					<option value="robotics_house">Electrically Robotics for House</option>
+					<option value="robotics_transformer">Robotics Transformer</option>
+				</select>
+			</div>
+
+			<div class="mb-3">
+				<label class="form-label">Statement of Interest:</label>
+				<textarea class="form-control" rows="4" placeholder="Type here..." name="interest"></textarea>
+			</div>
+
+			<button type="submit" class="btn btn-primary w-100">Submit Form</button>
+		</form>
+	</div>
+
+</body>
+</html>
